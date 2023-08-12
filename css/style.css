@@ -234,6 +234,13 @@ div.kiri img{
    border-radius: 50%;
 }
 
+div.kiri img.logo-h1{
+   height: 60px;
+   margin-bottom: -25px;
+   weight: 60px;
+   background-color: transparent;
+}
+
 /* penulisan CSS dapat digabung dengan beberapa elemen */
 header div.kiri,
 header div.kanan {

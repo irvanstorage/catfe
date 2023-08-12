@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <title>Website Kopi Kuy</title>
+    <link rel="shortcut icon" href="images/logo/logo-catfe.png" type="image/x-icon" />
+    <title>Catfe</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <nav>
-      <img class="logo" src="images/logo/logo_kuy.png" />
+      <a href="index.html">
+      <img class="logo" src="images/logo/logo-catfe.png"/>
+    </a>
       <div class="navigasi">
         <a href="#best-seller">Best Seller</a>
         <a href="#our-team">Our Team</a>
@@ -21,7 +23,7 @@
       <a class="shop" href="produk.html">Shop</a>
       <a
         class="chat"
-        href="https://wa.me/628123456?text=Saya ingin bertanya"
+        href="https://wa.me/628973203427?text=Saya ingin bertanya"
         target="_blank"
         >Chat</a
       >
@@ -31,11 +33,15 @@
     <header>
       <section>
         <div class="kiri">
-          <h1>Kopi Kuy <img src="images/icon/icon_kopi.svg" alt="" /></h1>
+          <h1>
+            Catfe
+            <img class="logo-h1" src="images/logo/logo-catfe.png" alt="" />
+          </h1>
 
           <p>
-            Kopi Kuy merupakan sebuah startup kopi retail yang ingin menyajikan
-            high quality Coffee untuk para pelanggannya.
+            Catfe merupakan sebuah cafe yang harmonis di mana para pecinta
+            kucing dan pecinta kopi dapat bersatu, saling berbagi, dan merasakan
+            kebahagiaan melalui interaksi dengan kucing yang menggemaskan
           </p>
           <div class="olshop">
             <img src="images/logo/logo_bukalapak.png" alt="" />
@@ -49,18 +55,10 @@
           <canvas id="canvas" width="500" height="500"></canvas>
 
           <!-- javascript logic animation rive -->
-          <script>
-            const r = new rive.Rive({
-              src: "rive/meong.riv",
-              canvas: document.getElementById("canvas"),
-              autoplay: true,
-              stateMachines : 'State Machine 1'
-            });
-          </script>
         </div>
       </section>
     </header>
-    <section class="best-seller #best-seller">
+    <section class="best-seller" id="#best-seller">
       <h2>Menu Andalan Kami</h2>
       <p>Nikmati menu andalan yang menjadi favorit customer Kami</p>
       <div class="produk">
@@ -81,19 +79,20 @@
       </div>
     </section>
     <section class="about-us #about-us">
-      <h2>Gak Ngopi Gak Kuy!</h2>
+      <h2>Meow untuk Telinga, Kopi untuk Jiwa!</h2>
       <p>
-        Didirikan pada 2017, Kopi Kuy merupakan sebuah startup kopi retail yang
-        ingin menyajikan kopi dengan kualitas tinggi untuk para pelanggannya.
-        Nama Kuy yang diambil dari "yuk" yang merupakan harapan kami untuk
-        mengajak semua yang terlibat dalam bisnis kami untuk bersama-sama
-        menikmati sajian kopi yang berkualitas.
+        Catfe bukan hanya tentang memanjakan lidah anda, ini juga tentang
+        membuat perbedaan. Setiap kunjungan anda berkontribusi pada
+        kesejahteraan penghuni kucing kami dan mendukung tempat penampungan
+        hewan lokal. Ini lebih dari sekadar kopi, ini adalah belas kasihan dalam
+        setiap cangkir.
       </p>
-      <img src="images/about-us/aset_kopi_jumbo.png" alt="" />
+      <img src="images/about-us/aboutus-catfe.png" alt="" />
       <p>
-        Kopi yang kami jual, hanya dari petani terpilih, dan berkualitas tinggi
-        diproses secara sempurna dan diteruskan oleh para barista handal, yang
-        penuh semangat dalam menyiapkan segelas kebahagiaan spesial untuk anda
+        Kami menawarkan berbagai pilihan kopi, teh, serta
+        makanan penutup dan makanan ringan berkualitas tinggi. Menu kami
+        disesuaikan dengan tema kafe dan selalu diperbarui untuk memenuhi selera
+        pelanggan yang beragam.
       </p>
     </section>
     <section class="our-team #our-team">
@@ -174,16 +173,16 @@
       ></iframe>
       <div class="kontak1">
         <img src="images/icon/icon_phone.png" alt="" />
-        <p>Telp: +62 (812) 9046 5034</p>
+        <p>Telp: +62 (897) 3203 427</p>
       </div>
 
       <div class="kontak2">
         <img src="images/icon/icon_mail.png" alt="" />
-        <p>Email: hello@kopikuy.com</p>
+        <p>Email: catfe@gmail.com</p>
       </div>
       <div class="kontak3">
         <img src="images/icon/icon_instagram.png" alt="" />
-        <p>Instagram: @kopi.kuy</p>
+        <p>Instagram: @catfe </p>
       </div>
     </section>
     <footer>
@@ -193,8 +192,16 @@
         <a href="#">Review</a>
         <a href="#">Contact Us</a>
       </div>
-      <p>Copyright kopi kuy: © 2023 Kopi Kuy. All Rights Reserved</p>
+      <p>Copyright catfe: © 2023 Catfe. All Rights Reserved</p>
     </footer>
+    <script>
+      const r = new rive.Rive({
+        src: "rive/meong.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        stateMachines: "State Machine 1",
+      });
+    </script>
 
     <!--
         Kode HTML tidak boleh lewat dari batas ini
