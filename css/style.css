@@ -20,6 +20,7 @@ nav,
 header,
 section,
 footer {
+   color: #fff;
    /* 
       display: flex memiliki pengaturan yang dapat mengatur agar elemen
       di dalamnya memiliki ukuran yang fleksibel
@@ -114,6 +115,7 @@ h2,
 h3 {
    /* mengatur tebal huruf bisa bold, normal*/
    font-weight: bold;
+   color: #fff;
 }
 
 img {
@@ -135,7 +137,7 @@ nav {
    untuk pengguna vscode silahkan arahkan mouse ke kotak warna di bawah
    untuk mengganti warna sesuai keinginan
    */
-   background-color: #198754;
+   background-color: #585ba8;
 
    /* box-shadow membuat efek bayangan */
    box-shadow: 0 3px 7px -2px #000;
@@ -186,7 +188,7 @@ a.shop {
 
 a.chat {
    margin-right: 30px;
-   background-color: rgb(8, 69, 8);
+   background-color: rgb(12, 134, 12);
    color: #fff;
    padding-top: 5px;
    padding-right: 15px;
@@ -214,11 +216,22 @@ section {
     pada padding dan margin ditambahkan top / right / bottom / top 
     untuk mengatur jarak masing-masing 
    */
-   padding-top: 80px;
-   padding-bottom: 80px;
+   padding-top: 50px;
+   padding-bottom: 30px;
 
    /* margin mengatur jarak ke luar */
-   margin-bottom: 80px;
+   
+
+   background-color: #24284c;
+
+  
+}
+div.kiri img{
+   background-color: #fff;
+   padding: 1%;
+   
+   margin-left: 1%;
+   border-radius: 50%;
 }
 
 /* penulisan CSS dapat digabung dengan beberapa elemen */
@@ -229,8 +242,13 @@ header div.kanan {
    padding: 50px;
 }
 
+canvas{
+   margin-bottom: 50px;
+}
+
 header h1 {
-   margin-bottom: 20px;
+   margin-bottom: 30px;
+   
 }
 
 header p {
@@ -251,8 +269,9 @@ div.olshop img {
 section.best-seller {
    position: relative;
 
+   
    /* background-color mengatur warna latar belakang elemen */
-   background-color: #EEE6DC;
+   background-color: #292f61;
 
    /* text-align mengatur rata tulisan, bisa bernilai: left, right, center, justify */
    text-align: center;
@@ -271,18 +290,17 @@ section.best-seller::after {
    height: 76px;
 
    /* background-image untuk menambahkan gambar sebagai background */
-   background-image: url(../images/background/garis-atas.png);
+   background-color: #24284c;
 
    /*background-size agar gambar latar menyesuaikan tinggi / lebar elemen */
-   background-size: cover;
-
+   background: cover;
    top: -60px;
    left: 0;
 }
 
 section.best-seller::after {
    height: 60px;
-   background-image: url(../images/background/garis-bawah.png);
+   background-color: #24284c;
    top: unset;
    bottom: -60px;
 }
@@ -301,6 +319,7 @@ aturan ini tidak berlaku untuk elemen <p> yang ada di dalam <div class="produk">
 section.best-seller>p {
    font-size: 18px;
    margin-bottom: 40px;
+   
    width: 100%;
 }
 
@@ -350,12 +369,14 @@ div.produk p {
 
 section.about-us {
    /* max-width: 80%; mengatur lebar maksimal elemen tidak boleh melebihi 80% layar */
-   max-width: 80%;
-
+   max-width: 100%;
+   
    /* margin-left dan margin-right auto akan membuat posisi elemen berada di tengah */
    margin-left: auto;
    margin-right: auto;
    text-align: center;
+   background-color: #24284c;
+   
 }
 
 section.about-us h2 {
@@ -380,17 +401,21 @@ yang ada di dalam <section class="about-us">
 
 section.about-us p:nth-child(2) {
    margin-bottom: 40px;
+   margin-left: 5%;
+   margin-right: 5%;
 }
 
 section.about-us p:nth-child(4) {
    margin-top: 40px;
+   margin-left: 5%;
+   margin-right: 5%;
 }
 
 
 /* OUR TEAM */
 
 section.our-team {
-   background-color: #EEE6DC;
+   background-color: #292f61;
    box-shadow: inset 0px 0px 23px -6px #707070;
    text-align: center;
 }
@@ -428,7 +453,7 @@ div.team img {
 /* REVIEW */
 
 section.review {
-   background-image: url(../images/background/bg-review.svg);
+   
    /* 
       background-size: contain;
       membuat gambar latar belakang tidak terpotong
@@ -465,6 +490,12 @@ div.testimoni {
    padding: 35px 50px;
    box-shadow: 0px 0px 12px -10px #000;
    background-color: #fff;
+   color: #000;
+}
+
+div.testimoni h3 {
+   color: #000;
+   padding-bottom: 30px;
 }
 
 div.testimoni img {
@@ -479,22 +510,26 @@ div.profile {
    display: block;
    margin-bottom: 30px;
    width: calc(100% - 75px);
+   color: #000;
 }
 
 div.profile p {
    width: 100%;
    text-align: left;
+   color: #000;
 }
 
 div.testimoni>p {
    width: 100%;
    text-align: left;
+   color: #000;
 }
 
 
 /* CONTACT US */
 section.contact-us {
-   margin-bottom: 20px;
+   padding-bottom: 20px;
+   background-color: #292f61;
 }
 
 section.contact-us iframe {
@@ -503,19 +538,41 @@ section.contact-us iframe {
    border: 0;
 }
 
-div.kontak {
+div.kontak1 {
    width: 30%;
    /* color mengatur warna tulisan */
-   color: green;
+   color: #000;
    text-align: center;
    margin-top: 50px;
+   background-color: #fff;
+   border-radius: 50px 0px 0px 40px;
+   /* padding-right: 20px;
+   padding-left: 20px; */
 }
-
-
+div.kontak2 {
+   width: 30%;
+   /* color mengatur warna tulisan */
+   color: #000;
+   text-align: center;
+   margin-top: 50px;
+   background-color: #fff;
+   
+}
+div.kontak3 {
+   width: 30%;
+   /* color mengatur warna tulisan */
+   color: #000;
+   text-align: center;
+   margin-top: 50px;
+   /* padding-left: 20px;
+   padding-right: 30px; */
+   background-color: #fff;
+   border-radius: 0px 50px 50px 0px;
+}
 /* FOOTER */
 
 footer {
-   background-color: #198754;
+   background-color: #24284c;
    padding-top: 15px;
    padding-bottom: 15px;
    color: #fff;
@@ -557,6 +614,38 @@ footer div.navigasi a {
    div.testimoni{
       width: 100%;
       margin-bottom: 30px;
+   }
+   div.kontak1 {
+      width: 60%;
+      /* color mengatur warna tulisan */
+      color: #000;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #fff;
+      border-radius: 50px;
+      
+      
+   }
+   div.kontak2 {
+      width: 60%;
+      /* color mengatur warna tulisan */
+      color: #000;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #fff;
+      border-radius: 50px;
+      
+   }
+   div.kontak3 {
+      width: 60%;
+      /* color mengatur warna tulisan */
+      color: #000;
+      text-align: center;
+      margin-top: 50px;
+      
+      
+      background-color: #fff;
+      border-radius: 50px;
    }
 }
 

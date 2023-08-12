@@ -44,146 +44,157 @@
           </div>
         </div>
         <div class="kanan">
-          <img src="images/header/header4.png" alt="">
+          <!-- Quick Starts Library Rive.app -->
+          <script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+          <canvas id="canvas" width="500" height="500"></canvas>
+
+          <!-- javascript logic animation rive -->
+          <script>
+            const r = new rive.Rive({
+              src: "rive/meong.riv",
+              canvas: document.getElementById("canvas"),
+              autoplay: true,
+              stateMachines : 'State Machine 1'
+            });
+          </script>
         </div>
       </section>
     </header>
-      <section class="best-seller #best-seller">
-        <h2>Menu Andalan Kami</h2>
-        <p>Nikmati menu andalan yang menjadi favorit customer Kami</p>
-        <div class="produk">
-          <img src="images/produk/product_capuchino.jpg" alt="" />
-          <p>Capuchino</p>
+    <section class="best-seller #best-seller">
+      <h2>Menu Andalan Kami</h2>
+      <p>Nikmati menu andalan yang menjadi favorit customer Kami</p>
+      <div class="produk">
+        <img src="images/produk/product_capuchino.jpg" alt="" />
+        <p>Capuchino</p>
+      </div>
+      <div class="produk">
+        <img src="images/produk/product_espresso.jpg" alt="" />
+        <p>Espresso</p>
+      </div>
+      <div class="produk">
+        <img src="images/produk/product_kopi_susu.jpg" alt="" />
+        <p>Kopi Susu</p>
+      </div>
+      <div class="produk">
+        <img src="images/produk/product_latte.jpg" alt="" />
+        <p>Cafe Latte</p>
+      </div>
+    </section>
+    <section class="about-us #about-us">
+      <h2>Gak Ngopi Gak Kuy!</h2>
+      <p>
+        Didirikan pada 2017, Kopi Kuy merupakan sebuah startup kopi retail yang
+        ingin menyajikan kopi dengan kualitas tinggi untuk para pelanggannya.
+        Nama Kuy yang diambil dari "yuk" yang merupakan harapan kami untuk
+        mengajak semua yang terlibat dalam bisnis kami untuk bersama-sama
+        menikmati sajian kopi yang berkualitas.
+      </p>
+      <img src="images/about-us/aset_kopi_jumbo.png" alt="" />
+      <p>
+        Kopi yang kami jual, hanya dari petani terpilih, dan berkualitas tinggi
+        diproses secara sempurna dan diteruskan oleh para barista handal, yang
+        penuh semangat dalam menyiapkan segelas kebahagiaan spesial untuk anda
+      </p>
+    </section>
+    <section class="our-team #our-team">
+      <h2>Our Team</h2>
+      <p>
+        Kami berinvestasi dalam rasa - mulai dari pemilihan biji, metode
+        pemanggangan, hingga barista dengan sertifikat internasional.
+      </p>
+      <div class="team">
+        <img src="images/team/team1.jpg" alt="" />
+        <h3>Riki Steven</h3>
+        <p>Founder Kopi Kuy</p>
+      </div>
+      <div class="team">
+        <img src="images/team/team2.jpg" alt="" />
+        <h3>Andi Asraf</h3>
+        <p>Head of Marketing</p>
+      </div>
+      <div class="team">
+        <img src="images/team/team3.jpg" alt="" />
+        <h3>Angelina Felly</h3>
+        <p>Barista</p>
+      </div>
+      <div class="team">
+        <img src="images/team/team4.jpg" alt="" />
+        <h3>Sarah Chou</h3>
+        <p>Barista</p>
+      </div>
+    </section>
+    <section class="review #review">
+      <h2>Apa Kata Mereka</h2>
+      <p>
+        Kami berikan fakta dan data, karena kepuasan konsumen selalu nomor 1
+        untuk kami.
+      </p>
+      <div class="testimoni">
+        <img src="images/customer/customer1.jpg" alt="" />
+        <div class="profile">
+          <h3>Benny Oktavian Mahasiswa</h3>
+          <p>
+            "Perdana kesini langsung merasa cocok dari segi tempat dan rasa.
+            Baristanya ramah dan pelayanannya maksimal, tidak sungkan bertanya
+            keinginan pengunjung."
+          </p>
         </div>
-        <div class="produk">
-          <img src="images/produk/product_espresso.jpg" alt="" />
-          <p>Espresso</p>
+      </div>
+      <div class="testimoni">
+        <img src="images/customer/customer2.jpg" alt="" />
+        <div class="profile">
+          <h3>Rena Oktaviana Karyawan Swasta</h3>
+          <p>
+            Asik buat santai sm tmn2, tempatnya nyaman dan yg bikin seru banyak
+            game2nya yg bs dimainkan bareng tmn2 atau saudara, menunya enak2,
+            pokoknya recomend banget deh tempatnya wajib coba guys!!!
+            Pelayanannya ramah banget 🤗."
+          </p>
         </div>
-        <div class="produk">
-          <img src="images/produk/product_kopi_susu.jpg" alt="" />
-          <p>Kopi Susu</p>
+      </div>
+      <div class="testimoni">
+        <img src="images/customer/customer3.jpg" alt="" />
+        <div class="profile">
+          <h3>Bagas Renaldo Dosen</h3>
+          <p>
+            "Tempat nya nyaman sekali pasti kalo kalian dateng betah ... selain
+            tempat yang nyaman lalu pelayanan nya good banget... dan kalian yang
+            datang ke kopi kuy jangan lewatkan permainan yang disediakan oleh
+            kopi kuy , banyak banget game nya!"
+          </p>
         </div>
-        <div class="produk">
-          <img src="images/produk/product_latte.jpg" alt="" />
-          <p>Cafe Latte</p>
-        </div>
-      </section>
-      <section class="about-us #about-us">
-        <h2>Gak Ngopi Gak Kuy!</h2>
-        <p>
-          Didirikan pada 2017, Kopi Kuy merupakan sebuah startup kopi retail
-          yang ingin menyajikan kopi dengan kualitas tinggi untuk para
-          pelanggannya. Nama Kuy yang diambil dari "yuk" yang merupakan harapan
-          kami untuk mengajak semua yang terlibat dalam bisnis kami untuk
-          bersama-sama menikmati sajian kopi yang berkualitas.
-        </p>
-        <img src="images/about-us/aset_kopi_jumbo.png" alt="" />
-        <p>
-          Kopi yang kami jual, hanya dari petani terpilih, dan berkualitas
-          tinggi diproses secara sempurna dan diteruskan oleh para barista
-          handal, yang penuh semangat dalam menyiapkan segelas kebahagiaan
-          spesial untuk anda
-        </p>
-      </section>
-      <section class="our-team #our-team">
-        <h2>Our Team</h2>
-        <p>
-          Kami berinvestasi dalam rasa - mulai dari pemilihan biji, metode
-          pemanggangan, hingga barista dengan sertifikat internasional.
-        </p>
-        <div class="team">
-          <img src="images/team/team1.jpg" alt="" />
-          <h3>Riki Steven</h3>
-          <p>Founder Kopi Kuy</p>
-        </div>
-        <div class="team">
-          <img src="images/team/team2.jpg" alt="" />
-          <h3>Andi Asraf</h3>
-          <p>Head of Marketing</p>
-        </div>
-        <div class="team">
-          <img src="images/team/team3.jpg" alt="" />
-          <h3>Angelina Felly</h3>
-          <p>Barista</p>
-        </div>
-        <div class="team">
-          <img src="images/team/team4.jpg" alt="" />
-          <h3>Sarah Chou</h3>
-          <p>Barista</p>
-        </div>
-      </section>
-      <section class="review #review">
-        <h2>Apa Kata Mereka</h2>
-        <p>
-          Kami berikan fakta dan data, karena kepuasan konsumen selalu nomor 1
-          untuk kami.
-        </p>
-        <div class="testimoni">
-          <img src="images/customer/customer1.jpg" alt="" />
-          <div class="profile">
-            <h3>Benny Oktavian Mahasiswa</h3>
-            <p>
-              "Perdana kesini langsung merasa cocok dari segi tempat dan rasa.
-              Baristanya ramah dan pelayanannya maksimal, tidak sungkan bertanya
-              keinginan pengunjung."
-            </p>
-          </div>
-        </div>
-        <div class="testimoni">
-          <img src="images/customer/customer2.jpg" alt="" />
-          <div class="profile">
-            <h3>Rena Oktaviana Karyawan Swasta</h3>
-            <p>
-              Asik buat santai sm tmn2, tempatnya nyaman dan yg bikin seru
-              banyak game2nya yg bs dimainkan bareng tmn2 atau saudara, menunya
-              enak2, pokoknya recomend banget deh tempatnya wajib coba guys!!!
-              Pelayanannya ramah banget 🤗."
-            </p>
-          </div>
-        </div>
-        <div class="testimoni">
-          <img src="images/customer/customer3.jpg" alt="" />
-          <div class="profile">
-            <h3>Bagas Renaldo Dosen</h3>
-            <p>
-              "Tempat nya nyaman sekali pasti kalo kalian dateng betah ...
-              selain tempat yang nyaman lalu pelayanan nya good banget... dan
-              kalian yang datang ke kopi kuy jangan lewatkan permainan yang
-              disediakan oleh kopi kuy , banyak banget game nya!"
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="contact-us #contact-us">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.741866032694!2d106.668581!3d-6.214715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9912c7f297b%3A0xe5a3a671dae861ab!2sKopi%20kuy!5e0!3m2!1sid!2sid!4v1680617229460!5m2!1sid!2sid"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <div class="kontak">
-          <img src="images/icon/icon_phone.png" alt="" />
-          <p>Telp: +62 (812) 9046 5034</p>
-        </div>
-    
-        <div class="kontak">
-          <img src="images/icon/icon_mail.png" alt="" />
-          <p>Email: hello@kopikuy.com</p>
-        </div>
-        <div class="kontak">
-          <img src="images/icon/icon_instagram.png" alt="" />
-          <p>Instagram: @kopi.kuy</p>
-        </div>
-      </section>
-      <footer>
-        <div class="navigasi">
-          <a href="#">Best Seller</a>
-          <a href="#">Our Team</a>
-          <a href="#">Review</a>
-          <a href="#">Contact Us</a>
-        </div>
-        <p>Copyright kopi kuy: © 2023 Kopi Kuy. All Rights Reserved</p>
-      </footer>
+      </div>
+    </section>
+    <section class="contact-us #contact-us">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.741866032694!2d106.668581!3d-6.214715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9912c7f297b%3A0xe5a3a671dae861ab!2sKopi%20kuy!5e0!3m2!1sid!2sid!4v1680617229460!5m2!1sid!2sid"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="kontak1">
+        <img src="images/icon/icon_phone.png" alt="" />
+        <p>Telp: +62 (812) 9046 5034</p>
+      </div>
+
+      <div class="kontak2">
+        <img src="images/icon/icon_mail.png" alt="" />
+        <p>Email: hello@kopikuy.com</p>
+      </div>
+      <div class="kontak3">
+        <img src="images/icon/icon_instagram.png" alt="" />
+        <p>Instagram: @kopi.kuy</p>
+      </div>
+    </section>
+    <footer>
+      <div class="navigasi">
+        <a href="#">Best Seller</a>
+        <a href="#">Our Team</a>
+        <a href="#">Review</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <p>Copyright kopi kuy: © 2023 Kopi Kuy. All Rights Reserved</p>
+    </footer>
 
     <!--
         Kode HTML tidak boleh lewat dari batas ini
